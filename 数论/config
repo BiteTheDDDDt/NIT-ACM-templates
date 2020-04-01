@@ -1,0 +1,21 @@
+<GCD、LCM、EXGCD> <GCD、LCM、EXGCD.cpp>
+<乘法逆元> <乘法逆元.cpp>
+<MillerRobin、PollardRho> <MillerRobin、PollardRho.cpp>
+<快速幂乘> <快速幂乘.cpp>
+<矩阵快速幂> <矩阵快速幂.cpp>
+<快速阶乘> <快速阶乘.cpp>
+<欧拉函数> <欧拉函数.cpp>
+<欧拉降幂> <欧拉降幂.cpp>
+<线性基> <线性基.cpp>
+<线性筛> <线性筛.cpp>
+<杜教筛><杜教筛.cpp>
+<组合数> <组合数.cpp>
+<模系解码、分数间最小分子> <模系解码、分数间最小分子.cpp>
+<EXCRT> <EXCRT.cpp>
+<n次同余> <n次同余.cpp>
+<离散对数> <离散对数.cpp>
+<BerlekampMassey、ReedsSloane> <BerlekampMassey、ReedsSloane.cpp>
+<拉格朗日插值法><拉格朗日插值法.cpp>
+<高斯消元> <高斯消元.cpp>
+<Dirichlet> <Dirichlet.cpp>
+<类欧几里德> <类欧几里德.cpp>

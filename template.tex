@@ -1,0 +1,273 @@
+\documentclass[10pt,a4paper]{article}
+%\usepackage{zh_CN-Adobefonts_external}
+\usepackage{xeCJK}
+\usepackage{amsmath, amsthm}
+\usepackage{listings,xcolor}
+\usepackage{geometry} % 设置页边距
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr} % 自定义页眉页脚
+
+
+\setsansfont{Consolas} % 设置英文字体
+\setmonofont[Mapping={}]{Consolas} % 英文引号之类的正常显示，相当于设置英文字体
+
+\linespread{1.2}
+
+\title{Algorithm Templates}
+\author{Pxl @ NIT}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\pagestyle{fancy}
+
+\lhead{\CJKfamily{kai} Ningbo Institute of Technology, Zhejiang University } %以下分别为左中右的页眉和页脚
+\chead{}
+
+\rhead{\CJKfamily{kai} 第 \thepage 页}
+\lfoot{} 
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+%\geometry{left=2.5cm,right=3cm,top=2.5cm,bottom=2.5cm} % 页边距
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\setlength{\columnsep}{30pt}
+
+\makeatletter
+
+\makeatother
+
+
+
+\lstset{
+    language    = c++,
+    numbers     = left,
+    numberstyle={                               % 设置行号格式
+        \small
+        \color{black}
+        \fontspec{Consolas}
+    },
+	commentstyle = \color[RGB]{0,128,0}\bfseries, %代码注释的颜色
+	keywordstyle={                              % 设置关键字格式
+        \color[RGB]{40,40,255}
+        \fontspec{Consolas Bold}
+        \bfseries
+    },
+	stringstyle={                               % 设置字符串格式
+        \color[RGB]{128,0,0}
+        \fontspec{Consolas}
+        \bfseries
+    },
+	basicstyle={                                % 设置代码格式
+        \fontspec{Consolas}
+        \small\ttfamily
+    },
+	emphstyle=\color[RGB]{112,64,160},          % 设置强调字格式
+    breaklines=true,                            % 设置自动换行
+    tabsize     = 4,
+    frame       = single,%主题
+    columns     = fullflexible,
+    rulesepcolor = \color{red!20!green!20!blue!20}, %设置边框的颜色
+    showstringspaces = false, %不显示代码字符串中间的空格标记
+	escapeinside={\%*}{*)},
+}
+
+\begin{document}
+\title{Algorithm Templates}
+\author {BiteTheDust}
+\maketitle
+\tableofcontents
+\newpage
+\section{动态规划}
+\subsection{数位dp}
+\lstinputlisting{动态规划/数位dp.cpp}
+\subsection{SOSdp}
+\lstinputlisting{动态规划/SOSdp.cpp}
+\subsection{斜率优化dp}
+\lstinputlisting{动态规划/斜率优化dp.cpp}
+\subsection{可逆背包}
+\lstinputlisting{动态规划/可逆背包.cpp}
+\subsection{树形dp}
+\lstinputlisting{动态规划/树型dp.cpp}
+\subsection{UpDowndp}
+\lstinputlisting{动态规划/UpDowndp.cpp}
+\subsection{换根dp}
+\lstinputlisting{动态规划/换根dp.cpp}
+\subsection{基环树dp}
+\lstinputlisting{动态规划/基环树dp.cpp}
+\section{字符串}
+\subsection{Manacher}
+\lstinputlisting{字符串/Manacher.cpp}
+\subsection{KMP}
+\lstinputlisting{字符串/KMP.cpp}
+\subsection{EXKMP}
+\lstinputlisting{字符串/EXKMP.cpp}
+\subsection{字符串hash}
+\lstinputlisting{字符串/字符串hash.cpp}
+\subsection{后缀自动机}
+\lstinputlisting{字符串/后缀自动机.cpp}
+\subsection{维护endpos}
+\lstinputlisting{字符串/维护endpos.cpp}
+\subsection{回文自动机}
+\lstinputlisting{字符串/回文自动机.cpp}
+\subsection{AC自动机}
+\lstinputlisting{字符串/AC自动机.cpp}
+\subsection{序列自动机}
+\lstinputlisting{字符串/序列自动机.cpp}
+\subsection{最小表示法}
+\lstinputlisting{字符串/最小表示法.cpp}
+\subsection{Lyndon分解}
+\lstinputlisting{字符串/Lyndon分解.cpp}
+\section{图论}
+\subsection{dijkstra}
+\lstinputlisting{图论/dijkstra.cpp}
+\subsection{dinic}
+\lstinputlisting{图论/dinic.cpp}
+\subsection{dij费用流}
+\lstinputlisting{图论/dij费用流.cpp}
+\subsection{zkw费用流}
+\lstinputlisting{图论/zkw费用流.cpp}
+\subsection{KM算法}
+\lstinputlisting{图论/KM算法.cpp}
+\subsection{带花树}
+\lstinputlisting{图论/带花树.cpp}
+\subsection{并查集}
+\lstinputlisting{图论/并查集.cpp}
+\subsection{割点}
+\lstinputlisting{图论/割点.cpp}
+\subsection{桥}
+\lstinputlisting{图论/桥.cpp}
+\subsection{强连通分量}
+\lstinputlisting{图论/强连通分量.cpp}
+\subsection{树链剖分}
+\lstinputlisting{图论/树链剖分.cpp}
+\subsection{LinkCutTree}
+\lstinputlisting{图论/LinkCutTree.cpp}
+\subsection{任意根lca}
+\lstinputlisting{图论/任意根lca.cpp}
+\subsection{最大独立集}
+\lstinputlisting{图论/最大独立集.cpp}
+\subsection{拓扑排序}
+\lstinputlisting{图论/拓扑排序.cpp}
+\subsection{树分治}
+\lstinputlisting{图论/树分治.cpp}
+\subsection{DsuOnTree}
+\lstinputlisting{图论/DsuOnTree.cpp}
+\subsection{虚树}
+\lstinputlisting{图论/虚树.cpp}
+\section{数据结构}
+\subsection{莫队分块}
+\lstinputlisting{数据结构/莫队分块.cpp}
+\subsection{带修改莫队分块}
+\lstinputlisting{数据结构/带修改莫队分块.cpp}
+\subsection{树状数组}
+\lstinputlisting{数据结构/树状数组.cpp}
+\subsection{线段树(重载+最大子列和)}
+\lstinputlisting{数据结构/线段树(重载+最大子列和).cpp}
+\subsection{可持久化线段树}
+\lstinputlisting{数据结构/可持久化线段树.cpp}
+\subsection{动态开点线段树}
+\lstinputlisting{数据结构/动态开点线段树.cpp}
+\subsection{李超树}
+\lstinputlisting{数据结构/李超树.cpp}
+\subsection{整体二分}
+\lstinputlisting{数据结构/整体二分.cpp}
+\subsection{扩展整体二分}
+\lstinputlisting{数据结构/扩展整体二分.cpp}
+\subsection{字典树}
+\lstinputlisting{数据结构/字典树.cpp}
+\subsection{块状链表}
+\lstinputlisting{数据结构/块状链表.cpp}
+\section{数论}
+\subsection{GCD、LCM、EXGCD}
+\lstinputlisting{数论/GCD、LCM、EXGCD.cpp}
+\subsection{乘法逆元}
+\lstinputlisting{数论/乘法逆元.cpp}
+\subsection{MillerRobin、PollardRho}
+\lstinputlisting{数论/MillerRobin、PollardRho.cpp}
+\subsection{快速幂乘}
+\lstinputlisting{数论/快速幂乘.cpp}
+\subsection{矩阵快速幂}
+\lstinputlisting{数论/矩阵快速幂.cpp}
+\subsection{快速阶乘}
+\lstinputlisting{数论/快速阶乘.cpp}
+\subsection{欧拉函数}
+\lstinputlisting{数论/欧拉函数.cpp}
+\subsection{欧拉降幂}
+\lstinputlisting{数论/欧拉降幂.cpp}
+\subsection{线性基}
+\lstinputlisting{数论/线性基.cpp}
+\subsection{线性筛}
+\lstinputlisting{数论/线性筛.cpp}
+\subsection{杜教筛}
+\lstinputlisting{数论/杜教筛.cpp}
+\subsection{组合数}
+\lstinputlisting{数论/组合数.cpp}
+\subsection{模系解码、分数间最小分子}
+\lstinputlisting{数论/模系解码、分数间最小分子.cpp}
+\subsection{EXCRT}
+\lstinputlisting{数论/EXCRT.cpp}
+\subsection{n次同余}
+\lstinputlisting{数论/n次同余.cpp}
+\subsection{离散对数}
+\lstinputlisting{数论/离散对数.cpp}
+\subsection{BerlekampMassey、ReedsSloane}
+\lstinputlisting{数论/BerlekampMassey、ReedsSloane.cpp}
+\subsection{拉格朗日插值法}
+\lstinputlisting{数论/拉格朗日插值法.cpp}
+\subsection{高斯消元}
+\lstinputlisting{数论/高斯消元.cpp}
+\subsection{Dirichlet}
+\lstinputlisting{数论/Dirichlet.cpp}
+\subsection{类欧几里德}
+\lstinputlisting{数论/类欧几里德.cpp}
+\section{其他}
+\subsection{01分数规划}
+\lstinputlisting{其他/01分数规划.cpp}
+\subsection{单纯形法}
+\lstinputlisting{其他/单纯形法.cpp}
+\subsection{java大数}
+\lstinputlisting{其他/java大数.cpp}
+\subsection{mini读入挂}
+\lstinputlisting{其他/mini读入挂.cpp}
+\subsection{FFT快速傅里叶变换}
+\lstinputlisting{其他/FFT快速傅里叶变换.cpp}
+\subsection{FWT快速沃尔什变换}
+\lstinputlisting{其他/FWT快速沃尔什变换.cpp}
+\subsection{NTT快速数论变换}
+\lstinputlisting{其他/NTT快速数论变换.cpp}
+\subsection{MTT快速数论变换(任意模数)}
+\lstinputlisting{其他/MTT快速数论变换(任意模数).cpp}
+\subsection{SG函数}
+\lstinputlisting{其他/SG函数.cpp}
+\subsection{第二类斯特林数}
+\lstinputlisting{其他/第二类斯特林数.cpp}
+\subsection{离散化}
+\lstinputlisting{其他/离散化.cpp}
+\subsection{STL}
+\lstinputlisting{其他/STL.cpp}
+\subsection{星期}
+\lstinputlisting{其他/星期.cpp}
+\subsection{博弈}
+\lstinputlisting{其他/博弈.cpp}
+\section{几何}
+\subsection{二维几何}
+\lstinputlisting{几何/二维几何.cpp}
+\subsection{三维几何}
+\lstinputlisting{几何/三维几何.cpp}
+\subsection{三维凸包}
+\lstinputlisting{几何/三维凸包.cpp}
+\subsection{多边形交}
+\lstinputlisting{几何/多边形交.cpp}
+\section{工具}
+\subsection{对拍}
+\lstinputlisting{工具/对拍.cpp}
+\subsection{数据生成器}
+\lstinputlisting{工具/数据生成器.cpp}
+\subsection{cb环境配置}
+\lstinputlisting{工具/cb环境配置.cpp}
+\end{document}

@@ -1,0 +1,11 @@
+<Manacher> <Manacher.cpp>
+<KMP> <KMP.cpp>
+<EXKMP> <EXKMP.cpp>
+<字符串hash> <字符串hash.cpp>
+<后缀自动机> <后缀自动机.cpp>
+<维护endpos> <维护endpos.cpp>
+<回文自动机> <回文自动机.cpp>
+<AC自动机> <AC自动机.cpp>
+<序列自动机> <序列自动机.cpp>
+<最小表示法> <最小表示法.cpp>
+<Lyndon分解><Lyndon分解.cpp>
